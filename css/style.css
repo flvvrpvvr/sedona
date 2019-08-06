@@ -485,6 +485,7 @@ input[type="text"] {
 
 .visible {
   display: block;
+  animation: fadeInDown 0.5s;
 }
 
 /* hotels */
