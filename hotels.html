@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <title>Гостиницы</title>
 </head>
@@ -17,17 +17,13 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
-          <img src="img/logo.png" alt="Лого" width="137px" height="70px">
+          <img src="img/logo.png" alt="Лого" width="137" height="70">
         </a>
         <ul class="wrapper">
-          <div class="site-navigation-column">
             <li><a href="index.html">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-          </div>
-          <div class="site-navigation-column">
             <li><a href="#">Карта штата</a></li>
             <li><a href="hotels.html" class="current">Гостиницы</a></li>
-          </div>
         </ul>
       </nav>
     </header>
@@ -37,7 +33,7 @@
         <div class="wrapper">
           <form action="https://echo.htmlacademy.ru" method="post" class="filter">
             <ul class="infrastructure">
-              <h2>Инфраструктура:</h2>
+              <li class="pl-0"><h2>Инфраструктура:</h2></li>
               <li>
                 <input type="checkbox" id="swimming-pool" name="swimming-pool" checked><label for="swimming-pool">Бассейн</label>
               </li>
@@ -49,7 +45,7 @@
               </li>
             </ul>
             <ul class="housing">
-              <h2>Тип жилья:</h2>
+              <li class="pl-0"><h2>Тип жилья:</h2></li>
               <li>
                 <input type="checkbox" id="hotel" name="hotel" checked disabled><label for="hotel">Гостиница</label>
               </li>
@@ -73,8 +69,8 @@
               </div>
               <button type="submit" class="filter-button">Показать</button>
             </div>
-          </div>
           </form>
+          </div>
 
 
       </section>
@@ -84,7 +80,8 @@
           <div class="hotels-found-sort">
             <h2>Найдено: 3</h2>
             <ul class="sort">
-              <h3>Сортировка:</h3>
+
+              <li><h3>Сортировка:</h3></li>
               <li class="sort-item sort-item-current">По цене</li>
               <li class="sort-item">По типу</li>
               <li class="sort-item">По рейтингу</li>
@@ -99,8 +96,7 @@
         </div>
 
         <div class="hotels-found-row">
-          <img src="img/hotel-1.jpg" alt="" width="135" height="90">
-
+          <img src="img/hotel-1.jpg" alt="Amara Resort & Spa" width="135" height="90">
           <div class="column">
             <h2>Amara Resort & Spa</h2>
             <table class="table-price">
@@ -130,7 +126,7 @@
         </div>
 
         <div class="hotels-found-row">
-          <img src="img/hotel-2.jpg" alt="" width="135" height="90">
+          <img src="img/hotel-2.jpg" alt="Desert Quail Inn" width="135" height="90">
           <div class="column">
             <h2>Desert Quail Inn</h2>
             <table class="table-price">
@@ -158,7 +154,7 @@
         </div>
 
         <div class="hotels-found-row">
-          <img src="img/hotel-3.jpg" alt="" width="135" height="90">
+          <img src="img/hotel-3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
           <div class="column">
             <h2>Villas at Poco Diablo</h2>
             <table class="table-price">
@@ -207,6 +203,7 @@
               <a class="social-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
                   <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff" />
+                </svg>
               </a>
             </li>
             <li>
@@ -223,9 +220,7 @@
       </div>
     </footer>
   </div>
-
-
-  <!-- <script type="text/javascript" src="script.js"></script> -->
+  
 </body>
 
 </html>
